@@ -8,3 +8,9 @@
         iburst: yes
   roles:
     - rhel-system-roles.timesync
+
+- hosts: all
+  become: yes
+  roles:
+    - set_TZ
+
