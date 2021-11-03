@@ -1,5 +1,6 @@
 ---
 - hosts: all
+  become: yes
   vars:
     timesync_ntp_servers:
       - hostname: 2.rhel.pool.ntp.org
